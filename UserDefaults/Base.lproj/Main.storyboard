@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UserDefaults" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B3S-ya-bbQ">
+                                <rect key="frame" x="25" y="94" width="364" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOK-e8-yk8">
+                                <rect key="frame" x="20" y="204" width="374" height="30"/>
+                                <state key="normal" title="Guardar">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="guardar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eto-Xi-Wy8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHf-6u-DJJ">
+                                <rect key="frame" x="25" y="282" width="374" height="30"/>
+                                <state key="normal" title="Mostrar"/>
+                                <connections>
+                                    <action selector="mostrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cD0-IM-S4m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TOK-e8-yk8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="428-By-rtH"/>
+                            <constraint firstItem="yHf-6u-DJJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4gH-Ph-l3W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yHf-6u-DJJ" secondAttribute="trailing" constant="20" id="FEd-fM-JyO"/>
+                            <constraint firstItem="yHf-6u-DJJ" firstAttribute="top" secondItem="TOK-e8-yk8" secondAttribute="bottom" constant="200" id="HMh-Ev-bTK"/>
+                            <constraint firstItem="TOK-e8-yk8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Kmu-8v-D45"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TOK-e8-yk8" secondAttribute="bottom" constant="50" id="Nck-Ab-6XV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TOK-e8-yk8" secondAttribute="bottom" constant="50" id="RG6-Bv-hK8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TOK-e8-yk8" secondAttribute="trailing" constant="20" id="X5Y-Gy-gy0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B3S-ya-bbQ" secondAttribute="trailing" constant="25" id="cS4-mj-zmd"/>
+                            <constraint firstItem="B3S-ya-bbQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="cfK-gR-gzW"/>
+                            <constraint firstItem="B3S-ya-bbQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="d0O-vM-rLJ"/>
+                            <constraint firstItem="yHf-6u-DJJ" firstAttribute="top" secondItem="TOK-e8-yk8" secondAttribute="bottom" constant="200" id="jVW-hq-Sgy"/>
+                            <constraint firstItem="yHf-6u-DJJ" firstAttribute="top" secondItem="TOK-e8-yk8" secondAttribute="bottom" constant="18" id="mw0-cu-IJ8"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="yHf-6u-DJJ" secondAttribute="bottom" constant="2" id="mzD-Iu-lPk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TOK-e8-yk8" secondAttribute="trailing" constant="20" id="nki-Fn-KCj"/>
+                            <constraint firstItem="TOK-e8-yk8" firstAttribute="top" secondItem="B3S-ya-bbQ" secondAttribute="bottom" constant="100" id="zag-YR-DyT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="texto" destination="B3S-ya-bbQ" id="4V2-B1-nbX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+</document>
